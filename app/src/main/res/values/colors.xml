@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#06106B</color>
+    <color name="colorPrimaryDark">#C92F03</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="orange">#F15A25</color>
+
+
+    <color name="hitam">#000000</color>
+    <color name="birugelap">#01015A</color>
+    <color name="biruhmj">#0424E2</color>
+    <color name="biruterang">#3141DA</color>
+    <color name="putih">#FFFFFF</color>
+    <color name="putih2">#F0F0F0</color>
+    <color name="abuabu">#8B8A8A</color>
+    <color name="abuabu2">#E9E9E9</color>
+    <color name="orangetransparan">#6DFD4203</color>
+    <color name="transparan">#00FFFFFF</color>
+
+    <color name="konfirmasicolor">#9E8F32</color>
+
+    <color name="hijostabilo">#4B441B</color>
+    <color name="hijostabiloastar">#705E37</color>
+
+    <color name="sembuhEnd">#0A460A</color>
+    <color name="sembuhstar">#306630</color>
+
+    <color name="rawatEnd">#474709</color>
+    <color name="rawatStar">#757538</color>
+
+    <color name="matiEnd">#6D0808</color>
+    <color name="matiStar">#643030</color>
+
+
+
+</resources>

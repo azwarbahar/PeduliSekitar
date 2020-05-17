@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MulaiActivity">
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:id="@+id/checkbox1"
+        android:textSize="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/img_logo"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="center"
+        android:text="@string/intro_mulai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/abuabu"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/img_bottom"
+        android:gravity="center"
+        android:text="@string/intro_mulai2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/img_bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/panel_menu"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+
+    <Button
+        android:id="@+id/btn_mulai"
+        android:background="@drawable/bg_cari_negara"
+        android:layout_width="250dp"
+        android:elevation="5dp"
+        android:textSize="16dp"
+        android:text="Mulai"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/orange"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/img_bottom"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_masuk_petugas"
+        android:layout_below="@id/btn_mulai"
+        android:background="@drawable/bg_btn_masuk_petugas"
+        android:layout_width="250dp"
+        android:elevation="5dp"
+        android:textSize="14dp"
+        android:text="Masuk Petugas"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/putih"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

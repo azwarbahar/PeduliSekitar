@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/birugelap"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <TextView
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="INFO COVID-19"
+            android:textColor="@color/putih"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_1"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_below="@id/checkbox1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8sp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/biruhmj">
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/putih"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/pieView"
+                    app:layout_constraintEnd_toEndOf="@+id/pieView"
+                    app:layout_constraintStart_toStartOf="@+id/pieView"
+                    app:layout_constraintTop_toTopOf="@+id/pieView"
+                    app:layout_constraintVertical_bias="0.45" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Total Cases"
+                    android:textColor="@color/abuabu"
+                    android:textSize="12dp"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_total"
+                    app:layout_constraintStart_toStartOf="@+id/tv_total"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_total" />
+
+                <com.razerdp.widget.animatedpieview.AnimatedPieView
+                    android:id="@+id/pieView"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_confirmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/putih"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.58"
+                    app:layout_constraintStart_toEndOf="@+id/pieView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.267" />
+
+                <TextView
+                    android:id="@+id/tv_recovered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:text="0"
+                    android:textColor="@color/putih"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_confirmed"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/tv_deaths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="8dp"
+                    android:text="0"
+                    android:textColor="@color/putih"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_recovered"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmed"
+                    android:textColor="#FFFFFF00"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_confirmed"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_confirmed" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recovered"
+                    android:textColor="#FF00FF00"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_recovered"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_recovered" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deaths"
+                    android:textColor="#FFFF0000"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_deaths"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_deaths" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/cv_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/biruhmj"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progesBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/putih" />
+
+
+                <TextView
+                    android:id="@+id/tv_negara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:text="Indonesia"
+                    android:textColor="@color/putih"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_recovered_negara4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Konfirmasi"
+                            android:textColor="@color/konfirmasicolor"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_confermed_negara88"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/konfirmasicolor"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_recovered_negara"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sembuh"
+                            android:textColor="#FF00FF00"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_recovered_negara2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#FF00FF00"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_recovered_negara5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dirawat"
+                            android:textColor="#FFFFFF00"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_confermed_negara6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#FFFFFF00"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_recovered_negara3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Meninggal"
+                            android:textColor="#FFFF0000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_deaths_negara"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#FFFF0000"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_lastUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Show Detail.."
+                    android:textColor="@color/abuabu"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/cv2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8sp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/biruhmj">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="PETA"
+                    android:textColor="@color/putih"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_dunia"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_cari_negara"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/ll_indo"
+                    app:layout_constraintEnd_toStartOf="@+id/ll_indo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ll_indo">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/earth" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_hospital"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_cari_negara"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/ll_indo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ll_indo"
+                    app:layout_constraintTop_toTopOf="@+id/ll_indo">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/hospital" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_indo"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_cari_negara"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6"
+                    app:layout_constraintVertical_bias="0.32999998">
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/indo" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Indonesia"
+                    android:textColor="@color/putih"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/ll_indo"
+                    app:layout_constraintStart_toStartOf="@+id/ll_indo"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_indo" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dunia"
+                    android:textColor="@color/putih"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/ll_dunia"
+                    app:layout_constraintStart_toStartOf="@+id/ll_dunia"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_dunia" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RS. Rujukan"
+                    android:textColor="@color/putih"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/ll_hospital"
+                    app:layout_constraintStart_toStartOf="@+id/ll_hospital"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_hospital" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvweb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/btn_maps"
+            android:layout_alignBottom="@id/btn_maps"
+            android:layout_toLeftOf="@id/btn_maps"
+            android:gravity="center"
+            android:text="Website Resmi"
+            android:textColor="@color/putih" />
+
+        <ImageView
+            android:id="@+id/btn_maps"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/cv3"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_bundar"
+            android:padding="3dp"
+            android:src="@drawable/ic_public_black_24dp" />
+
+
+        <ImageView
+            android:id="@+id/btn_about"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_info_outline_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="BY Muhammad Azwar Bahar"
+            android:textColor="@color/putih"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/save"
+                android:layout_below="@id/tv_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="StaySave"
+                android:textColor="@color/putih"
+                android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

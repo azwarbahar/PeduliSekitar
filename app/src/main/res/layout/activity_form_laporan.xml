@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormLaporanActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.AppCompat.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/orange"
+        app:title="Laporkan"
+        app:titleTextColor="@color/putih2" />
+
+
+    <!--        <ImageView-->
+    <!--            android:layout_marginTop="150dp"-->
+    <!--            android:layout_marginRight="10dp"-->
+    <!--            android:layout_alignParentRight="true"-->
+    <!--            android:background="@drawable/bulat_putih"-->
+    <!--            android:src="@drawable/ic_my_location_black_24dp"-->
+    <!--            android:layout_width="40dp"-->
+    <!--            android:padding="8dp"-->
+    <!--            android:layout_height="40dp"/>-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv2"-->
+    <!--            android:layout_marginHorizontal="16dp"-->
+    <!--            android:textStyle="bold"-->
+    <!--            android:layout_marginTop="15dp"-->
+    <!--            android:textColor="@color/hitam"-->
+    <!--            android:textSize="18sp"-->
+    <!--            android:text="Lengkapi Berikut"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"/>-->
+
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_below="@id/tv2"-->
+    <!--            android:id="@+id/rl_image"-->
+    <!--            android:layout_marginTop="20dp"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="200dp"-->
+    <!--            android:background="@color/putih2">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="70dp"-->
+    <!--                android:layout_height="70dp"-->
+    <!--                android:layout_centerInParent="true"-->
+    <!--                android:src="@drawable/ic_image_black_24dp" />-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/img_pict"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_centerInParent="true" />-->
+
+    <!--        </RelativeLayout>-->
+
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="50dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_marginTop="-25dp"-->
+    <!--            android:layout_marginRight="20dp"-->
+    <!--            android:background="@drawable/bulat_orange"-->
+    <!--            android:elevation="8dp">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:padding="10dp"-->
+    <!--                android:src="@drawable/ic_camera_alt_black_24dp" />-->
+
+    <!--        </RelativeLayout>-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/tv2"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/rl_image"-->
+    <!--            android:layout_marginLeft="16dp"-->
+    <!--            android:layout_marginTop="30dp"-->
+    <!--            android:text="Laporan"-->
+    <!--            android:textColor="@color/hitam"-->
+    <!--            android:textStyle="bold" />-->
+
+
+    <!--        <Spinner-->
+    <!--            android:id="@+id/spinner_lapor"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_below="@id/tv2"-->
+    <!--            android:layout_marginHorizontal="16dp"-->
+    <!--            android:background="@drawable/bg_spinner"-->
+    <!--            android:entries="@array/spinner_laporan"-->
+    <!--            android:paddingHorizontal="5dp" />-->
+
+    <!--        <CheckBox-->
+    <!--            android:id="@+id/checkbox_other"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/spinner_lapor"-->
+    <!--            android:layout_marginLeft="16dp"-->
+    <!--            android:buttonTint="@color/orange"-->
+    <!--            android:checked="false"-->
+    <!--            android:text="Other :" />-->
+
+    <!--        <EditText-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/spinner_lapor"-->
+    <!--            android:layout_marginRight="16dp"-->
+    <!--            android:layout_toRightOf="@id/checkbox_other" />-->
+
+
+    <EditText
+        android:id="@+id/input_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="Nama Lengkap"
+        android:inputType="text"
+        android:textColorHint="@color/abuabu"
+        app:boxStrokeColor="@color/orange" />
+
+
+    <EditText
+        android:id="@+id/input_telpon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_nama"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="No Telpon"
+        android:inputType="number"
+        android:textColorHint="@color/abuabu"
+        app:boxStrokeColor="@color/orange" />
+
+
+    <fragment
+        android:id="@+id/maps_titik"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/input_deskripsi"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tv_alamat"
+        android:layout_marginHorizontal="16dp"
+        tools:text="hdjshjkshkj hdjkshkjdshkj hkjsdhn kjshnjk nkjdsjkhskj hkjsdkjh dkjsjkl njkdsnkjns hksjlkdsj nkjdsklsjkl kdlsjks hndskjnkjs dksjks kdsjskd jdklsjlk "
+        android:textSize="8dp"
+        android:layout_below="@id/maps_titik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_titlok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_alignTop="@id/maps_titik"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_cari_negara"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="3dp"
+        android:text="Tap untuk memasang pin lokasi kejadian"
+        android:textColor="@color/abuabu"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_desk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_telpon"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Deskripsi"
+        android:textColor="@color/hitam" />
+
+    <EditText
+        android:id="@+id/input_deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/tv_desk"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_input_desk"
+        android:gravity="top"
+        android:hint="Penjelasan.."
+        android:inputType="textMultiLine|text"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/abuabu" />
+
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maps_titik"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@color/orange"
+        android:text="*Pastikan Anda telah membaca" />
+
+    <TextView
+        android:id="@+id/ini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maps_titik"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="26dp"
+        android:layout_toRightOf="@id/checkbox1"
+        android:gravity="end"
+        android:text="ini"
+        android:textColor="@color/orange"
+        android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:id="@+id/ll_btn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/ini"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="12dp"
+                android:weightSum="2">
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn_batal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginHorizontal="12dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/bg_btn_batal"-->
+<!--                    android:text="BATAL"-->
+<!--                    android:textColor="@color/orange"-->
+<!--                    android:textStyle="bold" />-->
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_lapor"
+                    android:text="Lapor"
+                    android:textColor="@color/putih"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_foto"
+        android:layout_marginLeft="-800dp"
+        android:layout_below="@id/ll_btn"
+        android:layout_width="100dp"
+        android:layout_height="120dp"/>
+
+    <ProgressBar
+        android:id="@+id/progesBar"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

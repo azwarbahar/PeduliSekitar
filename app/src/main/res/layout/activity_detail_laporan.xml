@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailLaporanActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/image_laporan"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_laporan"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Pelapor"
+            android:textColor="@color/hitam"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_laporan"
+            android:text=":"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/hitam"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/tv1"/>
+
+        <TextView
+            android:id="@+id/tv_nama_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_laporan"
+            android:layout_marginHorizontal="16dp"
+            android:text="Azwar"
+            android:layout_toRightOf="@id/tv2"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/hitam"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv1"
+            app:layout_constraintStart_toEndOf="@+id/tv2"
+            app:layout_constraintTop_toTopOf="@+id/tv1"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Telpon"
+            android:layout_marginHorizontal="16dp"
+            android:layout_below="@id/tv1"/>
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tanggal"
+            android:layout_marginHorizontal="16dp"
+            android:layout_below="@id/textView21"/>
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Jam"
+            android:layout_marginHorizontal="16dp"
+            android:layout_below="@id/textView26" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Lokasi"
+            android:layout_marginHorizontal="16dp"
+            android:layout_below="@id/textView29"/>
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Penjelasan"
+            android:layout_marginHorizontal="16dp"
+            android:layout_below="@+id/tv_alamat_detail"/>
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Keterangan"
+            android:textColor="@color/hitam"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_deskripsi_detail"/>
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_deskripsi_detail"
+            android:layout_toRightOf="@id/textView38"
+            android:textColor="@color/hitam"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_status_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah diproses"
+            android:textColor="@color/hitam"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/textView39"
+            android:layout_below="@id/tv_deskripsi_detail"/>
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv1"
+            android:layout_toRightOf="@id/textView21"/>
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textView21"
+            android:layout_toRightOf="@id/textView26" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textView26"
+            android:layout_toRightOf="@id/textView29" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tv_alamat_detail"
+            android:layout_toRightOf="@id/textView35" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/textView29"
+            android:layout_toRightOf="@id/textView32"/>
+
+        <TextView
+            android:id="@+id/tv_telpon_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="08234563765"
+            android:layout_alignBottom="@id/textView24"
+            android:layout_alignTop="@id/textView24"
+            android:layout_toRightOf="@id/textView24"/>
+
+        <TextView
+            android:id="@+id/tv_tanggal_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Minggi 2 Januari 2020"
+            android:layout_toRightOf="@id/textView27"
+            android:layout_alignBottom="@id/textView27"
+            android:layout_alignTop="@id/textView27"/>
+
+        <TextView
+            android:id="@+id/tv_jam_detaul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="20:20"
+            android:layout_alignBottom="@id/textView30"
+            android:layout_alignTop="@id/textView30"
+            android:layout_toRightOf="@id/textView30"/>
+
+        <TextView
+            android:id="@+id/tv_alamat_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:text="Jl. Veteran Selatan No.306, sadsjhsk hjdshjkdsh hjkdhskjdsjk jdksksd kjdklsjl djksskld jkdsksk njdksnk hjkhajkhk jdkahdskhk jdskjskhlk hjkjdlhh jfkshjdkal"
+            android:layout_below="@id/textView29"
+            android:layout_toRightOf="@id/textView36"/>
+
+        <TextView
+            android:id="@+id/tv_deskripsi_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@id/textView33"
+            android:text="Jl. Veteran Selatan No.306, sadsjhsk hjdshjkdsh hjkdhskjdsjk jdksksd kjdklsjl djksskld jkdsksk njdksnk hjkhajkhk jdkahdskhk jdskjskhlk hjkjdlhh jfkshjdkal"
+            android:layout_below="@id/tv_alamat_detail"
+            />
+
+        <Button
+            android:id="@+id/btn_proses"
+            android:background="@drawable/bg_btn_lapor"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/putih"
+            android:layout_marginTop="30dp"
+            android:text="Selesai"
+            android:layout_below="@id/tv_status_detail"/>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

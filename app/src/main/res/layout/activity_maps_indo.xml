@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/relativ"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="180dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoScrollableView="@+id/rv_negara"
+    tools:context=".MapsIndoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/putih">
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_bundar"
+            android:padding="3dp"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+
+        <ImageView
+
+            android:id="@+id/btn_info"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_bundar"
+            android:padding="5dp"
+            android:src="@drawable/ic_info_outline_black_24dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativ"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/map"
+        android:background="@drawable/bg_nav_maps"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/hitam"
+            android:layout_width="40dp"
+            android:layout_height="2dp"/>
+        <View
+            android:id="@+id/view2"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/hitam"
+            android:layout_width="40dp"
+            android:layout_height="2dp"/>
+
+        <TextView
+            android:id="@+id/tvtitelprof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/view2"
+            android:layout_marginBottom="15dp"
+            android:text="List Provinsi"
+            android:textColor="@color/hitam"
+            android:textSize="16dp" />
+
+        <ProgressBar
+            android:id="@+id/progesBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/putih" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_negara"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tvtitelprof"
+            tools:listitem="@layout/item_negara" />
+
+    </RelativeLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

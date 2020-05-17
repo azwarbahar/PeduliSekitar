@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetugasActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.AppCompat.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/orange"
+            android:elevation="4dp"
+            app:title="@string/app_name"
+            app:titleTextColor="@color/putih" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar" />
+
+        <ProgressBar
+            android:id="@+id/progesBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/orange" />
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:elevation="5dp"
+            android:layout_below="@id/toolbar"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_cari_negara">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Legenda"
+                android:textColor="@color/hitam" />
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/tv1"
+                android:id="@+id/img_hijau"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_place_hijau"
+                android:layout_width="14dp"
+                android:layout_height="14dp"/>
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/img_hijau"
+                android:id="@+id/img_merah"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_place_merah"
+                android:layout_width="14dp"
+                android:layout_height="14dp"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_toRightOf="@id/img_hijau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv1"
+                android:layout_alignBottom="@id/img_hijau"
+                android:layout_alignTop="@id/img_hijau"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:text="Sudah Diproses"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv2"
+                android:layout_alignBottom="@id/img_merah"
+                android:layout_alignTop="@id/img_merah"
+                android:layout_toRightOf="@id/img_merah"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:text="Belum Diproses"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

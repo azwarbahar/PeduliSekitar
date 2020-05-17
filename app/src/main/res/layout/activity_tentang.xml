@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TentangActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/orange"
+            app:title="Tentang"
+            app:titleTextColor="@color/putih" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:textColor="@color/hitam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="2dp"
+            android:text="Aplikasi ini dibuat untuk menekan angka penyebaran virus corona, dengan membantu aparat kepolisian dan pemerintah serta warga sekitar dalam melaporkan informasi titik lokasi kerumunan warga yg nongkrong atau berkegiatan disuatu tempat yg ramai, tanpa memperdulikan himbauan pemeritah untuk social distancing dan #dirumahsaja. \n\nSistem aplikasi ini memerlukan bantuan warga sipil maupun non-sipil, dengan memberikan info lokasi provinsi, kota, kabupaten, kecamatan, kelurahan, dan polsek/polda terdekat dari wilayah keramaian tersebut."
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="25dp"
+            android:text="Oleh :"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:textSize="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="1dp"
+            android:text="Ahmad Fadil (60900118009)\nAhmad Ilham (60900118033)\nMaulidani Mahmud (60900118012)\nAhmad Raihan (60900118018)\nAbdurrahman Hasanuddin (60900118019)\nAnas Mubarak Yasin (60900118020)\nAndi Bau Ammar (60900118026)\nMuhammad Azwar Bahar (60900116085)\nAhmad Dhitya Prismawan Syamsuri (60900117033)\nArdiansyah S. (60900115046)\nUsman (60900115073)\nAl’saadatil Muttaqin (60900116051)\nMuh. Awal Fikri (60900116058)\nErwin Tahir (60900116070)\nFarid Nasrullah (60900116083)" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv3"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="25dp"
+            android:text="Dosen :"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv4"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="1dp"
+            android:text="Reza Maulana S.Kom., M.T" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/hitam"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Universitas Islam Negeri Alauddin Makassar\nFakultas Sains dan Teknologi\nJurusan Sistem Informasi" />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

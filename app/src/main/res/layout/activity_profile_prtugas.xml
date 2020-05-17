@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/abuabu2"
+    tools:context=".ProfilePrtugasActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/orange"
+        app:title="Profile"
+        app:titleTextColor="@color/putih" />
+
+    <ImageView
+        android:id="@+id/img_foto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/person_male" />
+
+    <TextView
+        android:id="@+id/tvnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_foto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Ariel Noah"
+        android:textColor="@color/hitam"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvnama"
+        android:layout_margin="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Data :"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:id="@+id/rv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvdata"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_cari_negara"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/tvprofesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:text="Profesi : Polisi"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv1"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_cari_negara"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/tvuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:text="Username : Polisi"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv2"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/bg_cari_negara"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/tvpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:text="Password : Polisi"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
